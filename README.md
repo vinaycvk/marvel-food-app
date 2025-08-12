@@ -139,3 +139,15 @@ Payment gateway integration
 Deploy to Vercel (frontend) & Render (backend)
 Storing in cookies instead of localstorages
 
+
+### 🔑 Login Credentials (Seed Data)
+
+You can use these seeded accounts to log in and test the application:
+
+| Username         | Email                  | Password              | Role     |
+|------------------|------------------------|-----------------------|----------|
+| Nick Fury        | nick@example.com       | nickfury123           | Admin    |
+| Captain America  | americak@example.com   | captainamerica123     | Manager  |
+| Captain Marvel   | marvel@example.com     | captainmarvel123      | Manager  |
+| Thor             | thor@example.com       | thor123               | Member   |
+| Thanos           | thanos@example.com     | thanos123             | Member   |
