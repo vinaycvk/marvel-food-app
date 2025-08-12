@@ -57,7 +57,7 @@ export default function OrdersCard({ propOrders }: { propOrders: Order[] }) {
 
 
         if (newStatus === 'Confirmed') {
-            axios.patch(`${process.env.NEXT_PUBLIC_API_URL}/${updatedOrders[index]._id}/checkout`, {}, {
+            axios.patch(`${process.env.NEXT_PUBLIC_API_URL}/order/${updatedOrders[index]._id}/checkout`, {}, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
@@ -78,7 +78,7 @@ export default function OrdersCard({ propOrders }: { propOrders: Order[] }) {
         const updatedOrders = [...orders];
         
 
-        axios.patch(`${process.env.NEXT_PUBLIC_API_URL}/${updatedOrders[index]._id}/payment-method`,
+        axios.patch(`${process.env.NEXT_PUBLIC_API_URL}/order/${updatedOrders[index]._id}/payment-method`,
             { paymentMethod: newMethod }, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
